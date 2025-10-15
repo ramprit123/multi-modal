@@ -132,7 +132,7 @@ export function AppSidebar() {
       </SidebarContent>
       <SidebarFooter>
         <div className="p-2 text-xs text-muted-foreground">
-          © 2024 Your App
+          © 2025 Your App
         </div>
       </SidebarFooter>
     </Sidebar>
