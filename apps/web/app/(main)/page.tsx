@@ -1,4 +1,3 @@
-import { UserButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import { Button } from "@workspace/ui/components/button";
 import { ChatInputBox } from "./_components/ChatInput";

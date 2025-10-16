@@ -81,7 +81,7 @@ export function AppSidebar() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <span className="text-sm font-bold">A</span>
           </div>
-          <span className="font-semibold">SnapiChatGPT</span>
+          <span className="font-semibold">ChatGPT</span>
         </div>
       </SidebarHeader>
 
