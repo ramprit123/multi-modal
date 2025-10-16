@@ -1,4 +1,5 @@
 import { SidebarTrigger } from "@/components/Sidebar";
+import { UserButton } from "@clerk/nextjs";
 import { ModeToggle } from "@workspace/ui/components/ModeToggle";
 import React from "react";
 
@@ -10,8 +11,13 @@ export const Header = () => {
           <SidebarTrigger className="-ml-1" />
           <div className="h-4 w-px bg-border" />
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-x-3">
           <ModeToggle />
+          <UserButton
+            appearance={{
+              elements: { userButtonAvatarBox: { width: 36, height: 36 } },
+            }}
+          />
         </div>
       </div>
     </header>
