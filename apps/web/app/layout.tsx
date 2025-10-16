@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Providers } from "@/components/providers";
 
 import "@workspace/ui/globals.css";
 
@@ -24,7 +25,7 @@ export default function RootLayout({
         <body
           className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased `}
         >
-          {children}
+          <Providers>{children}</Providers>
         </body>
       </html>
     </ClerkProvider>

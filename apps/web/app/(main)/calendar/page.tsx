@@ -1,7 +1,12 @@
 import { auth } from "@clerk/nextjs/server";
 import { Button } from "@workspace/ui/components/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@workspace/ui/components/card";
-import { Calendar, Plus, ChevronLeft, ChevronRight, Clock } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@workspace/ui/components/card";
+import { Calendar, ChevronLeft, ChevronRight, Clock, Plus } from "lucide-react";
 
 export default async function CalendarPage() {
   const { userId } = await auth();

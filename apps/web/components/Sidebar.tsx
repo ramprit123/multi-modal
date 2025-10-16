@@ -25,6 +25,7 @@ import {
   Calendar,
   Search,
   PlusIcon,
+  Bolt,
 } from "lucide-react";
 
 const menuItems = [
@@ -116,6 +117,22 @@ export function AppSidebar() {
           <SidebarGroupLabel>Account</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
+              <div className="px-2 py-2">
+                <div className="text-xs text-muted-foreground mb-1">
+                  Credits
+                </div>
+                <div className="text-sm font-medium mb-2">2 / 10 used</div>
+                <div className="w-full bg-secondary rounded-full h-2">
+                  <div
+                    className="bg-primary h-2 rounded-full transition-all"
+                    style={{ width: "20%" }}
+                  />
+                </div>
+                <Button className="mt-2">
+                  <Bolt /> Upgrade
+                </Button>
+              </div>
+
               {settingsItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
